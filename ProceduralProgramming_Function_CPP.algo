@@ -20,7 +20,7 @@ i:=0;
 j:=0;
 ps:=1 ;
     FOR i FROM 0 to IR.length-1 STEP 1 DO
-     FOR j FROM 0 to IR.length-1 STEP 1 DO
+     FOR j FROM i+1 to IR.length-1 STEP 1 DO
      ps := Dot_product(IR[i],IR[j]) ;
      IF (ps = 0 ) THEN
      write('Orthogonals vectors :'IR[i],IR[j]);

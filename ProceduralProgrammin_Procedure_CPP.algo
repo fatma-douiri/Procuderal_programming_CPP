@@ -19,7 +19,7 @@ BEGIN
 i:=0;
 j:=0;
     FOR i FROM 0 to IR.length-1 STEP 1 DO
-     FOR j FROM 0 to IR.length-1 STEP 1 DO
+     FOR j FROM i+1 to IR.length-1 STEP 1 DO
 
      IF (Dot_product(IR[i],IR[j]) = 0 ) THEN
      write('Orthogonals vectors :'IR[i],IR[j]);
