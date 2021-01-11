@@ -1,0 +1,30 @@
+PROCEDURE Dot_product (V1,V2: ARRAY_OF reel [3];)
+VAR
+    ps: reel ;
+    i: INTEGER ;
+
+BEGIN
+ps := 0 ;
+    FOR i FROM 0 TO 2 STEP 1  DO
+        ps := ps + V1[i] * v2[i]
+    END_FOR
+    write (ps) ;
+END
+
+ALGORITHM Orthogonals_vectors 
+VAR
+    IR : ARRAY_OF reel [3][100];;
+    i,j : INTEGER;
+BEGIN
+i:=0;
+j:=0;
+    FOR i FROM 0 to IR.length-1 STEP 1 DO
+     FOR j FROM 0 to IR.length-1 STEP 1 DO
+
+     IF (Dot_product(IR[i],IR[j]) = 0 ) THEN
+     write('Orthogonals vectors :'IR[i],IR[j]);
+
+    END_FOR
+
+
+END
